@@ -2,7 +2,7 @@
 
 `tap-lucid-scim` is a Singer tap for LucidSCIM.
 
-Built with the [Meltano Tap SDK](https://sdk.meltano.com) for Singer Taps.
+Built with the [Meltano Tap SDK](https://sdk.meltano.com) for Singer Taps and [Lucid SCIM API reference](https://developer.lucid.co/scim/).
 
 <!--
 
