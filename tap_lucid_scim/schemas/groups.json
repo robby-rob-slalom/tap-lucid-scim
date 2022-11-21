@@ -1,0 +1,54 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "schemas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "members": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "string"
+          },
+          "$ref": {
+            "type": "string"
+          },
+          "display": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "resourceType": {
+          "type": "string"
+        },
+        "created": {
+          "type": "string"
+        },
+        "lastModified": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "schemas": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "userName": {
+      "type": "string"
+    },
+    "name": {
+      "type": "object",
+      "properties": {
+        "formatted": {
+          "type": "string"
+        },
+        "givenName": {
+          "type": "string"
+        },
+        "familyName": {
+          "type": "string"
+        }
+      }
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "emails": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "string"
+          },
+          "primary": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "display": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "urn:ietf:params:scim:schemas:extension:lucid:1.0:User": {
+      "type": "object",
+      "properties": {
+        "billingCode": {
+          "type": "string"
+        },
+        "productLicenses": {
+          "type": "object",
+          "properties": {
+            "Lucidchart": {
+              "type": "boolean"
+            },
+            "Lucidspark": {
+              "type": "boolean"
+            },
+            "LucidscaleCreator": {
+              "type": "boolean"
+            },
+            "LucidscaleExplorer": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "resourceType": {
+          "type": "string"
+        },
+        "created": {
+          "type": "string"
+        },
+        "lastModified": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        }
+      }
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
