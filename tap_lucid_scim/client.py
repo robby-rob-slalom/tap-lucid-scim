@@ -25,14 +25,14 @@ class LucidSCIMStream(RESTStream):
     def authenticator(self) -> BearerTokenAuthenticator:
         return BearerTokenAuthenticator.create_for_stream(
             self,
-            token = self.config.get('api_key')
+            token=self.config.get('api_key')
         )
 
     @property
     def http_headers(self) -> dict:
         headers = {}
         
-        if self.congig.get('user_agent'):
+        if self.config.get('user_agent'):
             headers['User-Agent'] = self.config.get('user_agent')
 
         return headers
